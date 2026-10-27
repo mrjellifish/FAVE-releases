@@ -1,14 +1,16 @@
 # FAVE downloads
 
-## [Download FAVE 1.0.4 beta](https://github.com/mrjellifish/FAVE-releases/releases/tag/v1.0.4-beta.1)
+## [Download FAVE 1.0.5 beta](https://github.com/mrjellifish/FAVE-releases/releases/tag/v1.0.5-beta.1)
 
 ### Windows x64
 
-Download **FAVE-1.0.4-Windows-x64-Setup.exe**. Save your session, close all DAWs, run Setup, then reopen your DAW and rescan VST3 plugins if needed. Administrator permission is required. Setup installs the plugin and its updater.
+Download **FAVE-1.0.5-Windows-x64-Setup.exe**. Save your session, close all DAWs, run Setup, then reopen your DAW and rescan VST3 plugins if needed. Administrator permission is required. Setup installs the plugin and its updater.
 
 ### macOS — Intel and Apple Silicon
 
-Download **FAVE-1.0.4-macOS-universal.zip**, unzip it, open **FAVEUpdater.app**, close your DAWs and click **Install FAVE**. It installs into your user's VST3 folder and retains the updater for future releases. Reopen the DAW and rescan if needed.
+Download **FAVE-1.0.5-macOS-universal.zip**, unzip it, open **FAVEUpdater.app**, close your DAWs and click **Install FAVE**. It installs into your user's VST3 folder and retains the updater for future releases. Reopen the DAW and rescan if needed.
+
+Version 1.0.5 adds red limiter-reduction caps to the cyan waveform; clipping remains red on the amber waveform. Audio processing is unchanged.
 
 ### Future updates
 
