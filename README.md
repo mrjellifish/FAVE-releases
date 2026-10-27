@@ -1,15 +1,25 @@
 # FAVE downloads
 
-Download the [FAVE 1.0.3 beta](https://github.com/mrjellifish/FAVE-releases/releases/tag/v1.0.3-beta.1).
+## [Download FAVE 1.0.4 beta](https://github.com/mrjellifish/FAVE-releases/releases/tag/v1.0.4-beta.1)
 
-## Windows x64
+### Windows x64
 
-Download `FAVE-1.0.3-Windows-x64-Setup.exe` from the release assets. Save your session and close all DAWs, run Setup, then reopen the DAW and rescan VST3 plugins if necessary. Administrator permission is required. This unsigned beta installer may trigger a Windows warning. The automated build and processor tests passed; real-PC installation and host testing are still needed.
+Download **FAVE-1.0.4-Windows-x64-Setup.exe**. Save your session, close all DAWs, run Setup, then reopen your DAW and rescan VST3 plugins if needed. Administrator permission is required. Setup installs the plugin and its updater.
 
-## macOS
+### macOS — Intel and Apple Silicon
 
-The release includes a universal Intel/Apple Silicon VST3 development ZIP. It is ad hoc signed, not notarized, and is not a Mac installer. See the release notes before downloading.
+Download **FAVE-1.0.4-macOS-universal.zip**, unzip it, open **FAVEUpdater.app**, close your DAWs and click **Install FAVE**. It installs into your user's VST3 folder and retains the updater for future releases. Reopen the DAW and rescan if needed.
 
-## Updates
+### Future updates
 
-Automatic updating is not implemented yet. Future beta versions currently require downloading and installing the new version. Source code is maintained separately in a private repository.
+Use **UPDATES** inside FAVE. On the first window opened in a DAW session, an automatic check also runs if at least a day has passed. A newer signed release enables **UPDATE AVAILABLE**. The companion downloads and verifies it, waits for you to save and quit the DAW, then starts installation. It never kills your DAW. Windows still shows Setup/UAC. An optional button reopens the DAW after installation; unsaved projects cannot be restored.
+
+No GitHub account is required. Existing 1.0.3 users must install this complete package once to add the updater. Download installers from the versioned release above; the separate update-channel-beta release contains metadata for the plugin, not installers.
+
+### Beta status
+
+Windows installers are unsigned, so Windows may show an unknown-publisher warning. Mac apps are ad hoc signed for integrity, not Developer ID signed or notarized, so Gatekeeper may block them. Publisher signing accounts are not configured yet. Update signatures authenticate future downloads but do not remove OS publisher warnings.
+
+Automated audio tests and updater verification passed on both platforms. CI installed the Windows package and loaded its VST3; Mac installation/upgrade tests and both CPU architectures were verified. Real DAW testing by beta users is still needed. Please report OS, DAW/version, scan/load results and audio/UI issues. Auto Gain remains disabled.
+
+Source code is maintained separately in a private repository.
